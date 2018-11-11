@@ -10,7 +10,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
   <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 </head>
@@ -18,7 +21,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" role="navigation">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="img/logobg.png" height="60px" width="100px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -30,7 +33,7 @@
             <a class="nav-link" href="#">Trang Chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Giới Thiệu</a>
+            <a class="nav-link" href="Bg-position.html">Giới Thiệu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#connect">Kết Nối</a>
@@ -39,30 +42,31 @@
       </div>
     </div>
   </nav>
+
   <!--- Section-1 -->
-  <main class="section-1">
+  <main class="section-1" id="mainpage">
     <div class="container-fluid p-0">
       <div class="site-content">
         <div class="d-flex justify-content-center">
-          <div class="d-flex flex-column">
-            <h1 class="site-title">Về Bắc Giang đi em</h1>
-            <p class="site-desc">Mảnh đất Bắc Giang với những ngọn núi, triền đê và những nụ cười - nơi tôi sinh ra,
-              lớn lên,<br> từng được ngắm, được thả hồn vào trong không gian của cuộc sống dịu dàng và tha thiết.</p>
+          <div class="d-flex flex-column" data-aos="fade-left">
+            <h1 class="site-title" >Về Bắc Giang đi em</h1>
+            <p class="site-desc" >Mảnh đất Bắc Giang với những ngọn núi, triền đê và những nụ cười - nơi tôi sinh ra,
+              lớn lên, từng được ngắm, được thả hồn vào trong không gian của cuộc sống dịu dàng và tha thiết.</p>
             <div class="d-flex flex-row">
-              <a href="https://www.google.com" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
+              <a href="introduce.html" target="_blank" class="btn site-btn1 btn-dark" data-aos="fade-left">Xem thêm</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-
+  <hr>
 
   <!--- section 2 -->
   <div class="section-2">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 col-md-12">
+        <div class="col-lg-7 col-md-12 left" data-aos="fade-up">
           <div id="slides" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
               <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -86,95 +90,94 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-12">
+        <div class="col-lg-5 col-md-12 right" data-aos="fade-left">
           <h1 class="text-white">Đến và khám phá phong cảnh Bắc Giang</h1>
           <p class="text">Bắc Giang là vùng đất nhiều danh lam thắng cảnh mà bạn khám phá nhiều ngày không hết. Dưới
             đây là một vài gợi ý những thắng cảnh đẹp bạn nên đến khi ghé thăm Bắc Giang.</p>
-          <a href="https://www.google.com" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
+          <a href="place.html" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
         </div>
       </div>
     </div>
   </div>
-
+<hr>
 
   <!--- Section-3 -->
   <div class="section-3">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-12">
+        <div class="col-lg-5 col-md-12 left" data-aos="fade-right">
           <h1 class="text-white">Thưởng Thức Những Món Ăn Của Người Bắc Giang</h1>
           <p class="text">Bắc Giang không chỉ là vùng đất nhiều danh lam thắng cảnh mà còn là nơi có rất nhiều món ẩm
             thực hấp dẫn . Dưới đây là một vài đặc sản nổi tiếng bạn nên thử khi ghé thăm Bắc Giang.</p>
-          <a href="https://www.google.com" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
+          <a href="food.html" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
         </div>
-        <div class="col-lg-7 col-md-12">
+        <div class="col-lg-7 col-md-12 right" data-aos="fade-up">
           <div class="meal">
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
+<hr>
   <!--Section-4 -->
   <div class="section-4">
     <div class="container-fluid text-center">
-      <h1 class="heading-1">Âm Nhạc và Nghệ Thuật</h1>
-      <p class="para-1">Bắc Giang, không chỉ được biết đến với những làng Quan họ cổ, mà nơi đây cũng là một trong
+      <h1 class="heading-1" data-aos="fade-right">Âm Nhạc và Nghệ Thuật</h1>
+      <p class="para-1" data-aos="fade-right">Bắc Giang, không chỉ được biết đến với những làng Quan họ cổ, mà nơi đây cũng là một trong
         những cái nôi của ca Trù và hát Văn xứ Bắc.</p>
-      <div class="row justify-content-center text-center">
-        <div class="col-md-6 col-lg-6 col-xl-4">
-          <div class="card" style="width: 20rem;">
-            <img src="img/quanho.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h4 class="card-title">Quan Họ</h4>
-              <p class="card-text">Dân ca Quan họ là một trong những làn điệu dân ca tiêu biểu của vùng châu thổ sông
-                Hồng ở miền Bắc Việt Nam. Nó được hình thành và phát triển ở vùng văn hóa Kinh Bắc xưa, đặc biệt là khu
-                vực ranh giới hai tỉnh Bắc Giang và Bắc Ninh ngày nay với dòng sông Cầu chảy qua được gọi là "dòng sông
-                quan họ".</p>
-              <a href="https://www.google.com" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
+
+        <div class="row justify-content-center text-center">
+
+          <div class="col-xl-4 col-lg-4 col-md-6 maincontainer" data-aos="fade-up">
+              <div class="thecard card">
+                <div class="thefront img1"style="background-image: url(img/hatvan.jpg)!important; height: 100%"></div>
+                  <div class="theback card-body">
+                    <h4 class="card-title">Hát Văn</h4>
+                    <p class="card-text">Hát văn, còn gọi là chầu văn hay hát bóng, là một loại hình nghệ thuật ca hát cổ truyền của Việt Nam. Đây là hình thức lễ nhạc gắn liền với nghi thức hầu đồng của tín ngưỡng Tứ phủ (Đạo Mẫu) và tín ngưỡng thờ Đức Thánh Trần (Đức Thánh Vương Trần Hưng Đạo), một tín ngưỡng dân gian Việt Nam.</p>
+                    <a href="https://www.youtube.com/watch?v=AxGcfhO0tiw" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
+                  </div>
+                </div>
             </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-6 maincontainer" data-aos="fade-up">
+              <div class=" card">
+                <div class="img2"></div>
+                  <div class="card-body">
+                    <h4 class="card-title">Quan Họ</h4>
+                    <p class="card-text">Dân ca Quan họ là một trong những làn điệu dân ca tiêu biểu của vùng châu thổ sông
+                    Hồng ở miền Bắc Việt Nam. Nó được hình thành và phát triển ở vùng văn hóa Kinh Bắc xưa, đặc biệt là khu
+                    vực ranh giới hai tỉnh Bắc Giang và Bắc Ninh ngày nay với dòng sông Cầu chảy qua được gọi là "dòng sông
+                    quan họ".</p>
+                    <a href="culture.html" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-4">
-          <div class="card" style="width: 20rem;">
-            <img src="img/hatvan.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h4 class="card-title">Hát Văn</h4>
-              <p class="card-text">Dân ca Quan họ là một trong những làn điệu dân ca tiêu biểu của vùng châu thổ sông
-                Hồng ở miền Bắc Việt Nam. Nó được hình thành và phát triển ở vùng văn hóa Kinh Bắc xưa, đặc biệt là khu
-                vực ranh giới hai tỉnh Bắc Giang và Bắc Ninh ngày nay với dòng sông Cầu chảy qua được gọi là "dòng sông
-                quan họ".</p>
-              <a href="https://www.google.com" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
-            </div>
+       
+
+        <div class="col-xl-4 col-lg-4 col-md-6 maincontainer" data-aos="fade-up">
+              <div class="thecard card">
+                <div class="thefront img3" style="background-image: url(img/catru.jpg)!important;"></div>
+                  <div class="theback card-body">
+                    <h4 class="card-title">Ca Trù</h4>
+                    <p class="card-text">Ca trù, còn gọi nôm na là Hát cô đầu, Hát ả đào, Hát nhà trò là loại hình diễn xướng bằng âm giai nhạc thính phòng rất thịnh hành tại khu vực Bắc Bộ và Bắc Trung Bộ Việt Nam. Ca trù thịnh hành từ thế kỷ 15, từng là loại ca trong cung đình và được giới quý tộc và trí thức yêu thích.</p>
+                    <a href="https://www.youtube.com/watch?v=lJ7J6Fa00Bg" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-4">
-          <div class="card" style="width: 20rem;">
-            <img src="img/catru.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h4 class="card-title">Ca Trù</h4>
-              <p class="card-text">Dân ca Quan họ là một trong những làn điệu dân ca tiêu biểu của vùng châu thổ sông
-                Hồng ở miền Bắc Việt Nam. Nó được hình thành và phát triển ở vùng văn hóa Kinh Bắc xưa, đặc biệt là khu
-                vực ranh giới hai tỉnh Bắc Giang và Bắc Ninh ngày nay với dòng sông Cầu chảy qua được gọi là "dòng sông
-                quan họ".</p>
-              <a href="https://www.google.com" target="_blank" class="btn site-btn1 btn-dark">Xem thêm</a>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
   </div>
 
   <!--- Connect -->
-  <div id="connect">
+  <div id="connect" data-aos="fade-left">
     <div class="container-fluid padding">
       <div class="row text-center padding">
         <div class="col-12">
           <h2>Kết Nối</h2>
         </div>
         <div class="col-12 social padding">
-          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href="https://www.facebook.com/BacGiangQueHuongToi.vn/"><i class="fab fa-facebook"></i></a>
           <a href=""><i class="fab fa-twitter"></i></a>
           <a href=""><i class="fab fa-google-plus-g"></i></a>
           <a href=""><i class="fab fa-instagram"></i></a>
@@ -185,8 +188,10 @@
   </div>
 
   <!--- Footer -->
-
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:2000,});
+  </script>
 </body>
 
 </html>

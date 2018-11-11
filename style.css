@@ -2,12 +2,17 @@
 *{
   box-sizing: border-box;
 }
+html {
+  width: auto;
+  height: 100%;
+}
 body {
-  margin:0%;
+  margin-right: 0!important;
+  width: auto;
+  height: 100%;
 }
 .navbar {
-  margin:0;
-  height: 60px;
+  margin:0px;
   padding: 0;
   background-color: #055D7A!important;
 }
@@ -22,16 +27,24 @@ body {
 a {
   font-family: 'Mali', cursive;
 }
+hr {
+  display: block;
+  padding:0;
+  margin: 0;
+  font-size: 1px;
+}
 
 /*---Section-1--*/
 
 .site-content {
-  background-image: url("img/background.jpg");
+  background-image: url("img/background-min (2).jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
   position: relative;
+  height: 700px;
 }
 .site-title {
+  font-weight: 700;
   color: white;
   font-family:'M PLUS Rounded 1c', sans-serif;
   margin-top: 14%;
@@ -49,7 +62,6 @@ a {
 .section-1 .site-btn1 {
   margin-left: 250px;
   margin-top: 0px;
-  margin-bottom:40%;
 
 }
 
@@ -57,8 +69,8 @@ a {
 /*---Section-2 --*/
 .section-2 {
   width: 100%;
-  padding-top:30px;
-  padding-bottom:30px;
+  padding-top:40px;
+  padding-bottom:40px;
   background-color: #BEE1ED;
 }
 .carousel-inner {
@@ -69,6 +81,7 @@ a {
   opacity: 0.8;
 }
 .text-white {
+  font-weight: 600;
   color: #765B7A!important;
   font-family:'M PLUS Rounded 1c', sans-serif; 
 }
@@ -84,7 +97,7 @@ a {
   margin-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  height: 100%;
+  height: 600px;
   overflow: visible;
 }
 .meal {
@@ -111,23 +124,25 @@ a {
   padding-bottom: 30px;
    background-color: #1A3D47;
 }
-.section-4 .heading-1{
+.heading-1{
+  font-weight: 600;
   color: #EBF3F5;
   font-family:'M PLUS Rounded 1c', sans-serif; 
   font-size: 50px;
 }
-.section-4 .para-1 {
+.para-1 {
   color: #EBF3F5;
   font-size: 16px;
   font-family: 'Mali', cursive;
 }
-.section-4 .row {
-  margin-left:35px;
-}
+.section-4 .maincontainer {
+  padding-bottom: 20px;
+} 
 .card-body {
    background-color: #65818A;
 }
 .card-title {
+  font-weight: 600;
   font-family:'M PLUS Rounded 1c', sans-serif; 
   font-size: 40px;
 }
@@ -136,12 +151,37 @@ a {
   font-family: 'Mali', cursive;
 }
 
+.thecard{
+
+  transition: 0.6s;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s linear;
+}
+.thecard:hover {
+  transform:rotateY(180deg);
+}
+ .thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.theback{
+  border-radius: 10px;
+  backface-visibility: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
 /*---Connect --*/
 #connect {
   padding-top: 20px;
   background-color: #F0E9E9;
 }
 #connect h2{
+  font-weight: 600;
   margin:auto;
   font-size: 40px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -171,43 +211,464 @@ a {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
+.navbar {
+  background-color:#fff!important;
+}
+.site-btn1 {
+  margin-left: 50px;
+  margin-top: 0;
+  font-size: 18px;
+}
+.nav-link{
+  color:#A6082F!important;
+}
+  /*---Section-1--*/
 
+.site-content {
+  height: 450px;
+}
+.site-title {
+  color: #fff;
+  font-family:'M PLUS Rounded 1c', sans-serif;
+  margin-top: 10%;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  font-size: 45px;
+}
+.site-desc {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 18px;
+  font-family: 'Mali', cursive;
+}
+.section-1 .site-btn1 {
+  margin-left: 50px;
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+/*---Section-2 --*/
+.section-2 {
+  padding-top: 30px;
+}
+.carousel-inner img {
+  height: 350px!important;
+  }
+.text-white {
+  padding-top: 20px;
+  margin-left: 0px;
+  font-size: 45px;
+  color: black!important;
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+}
+.text {
+  margin-left: 0px;
+  font-size: 18px;
+  color:black;
+  font-family: 'Mali', cursive;
+}
+.section-2 .site-btn1 {
+  margin-left: 0px;
+}
+
+/*---Section-3 --*/
+.section-3 {
+  padding-top:10px;
+  height: 660px;
+  padding-bottom: 20px;
+}
+.meal {
+  height: 350px;
+  border-radius: 10px 10px;
+}
+.section-3 .left {
+  padding-bottom:20px;
+}
+.section-3 .site-btn1 {
+  margin-left: 0px;
+}
+
+/*---Section-4 --*/
+.section-4 .heading-1{
+  color:black;
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+  font-size: 45px;
+}
+.section-4 .para-1 {
+  color: black;
+  font-size: 18px;
+  font-family: 'Mali', cursive;
+}
+.card-title {
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+  font-size: 45px;
+}
+.card-text {
+  font-size: 18px;
+  font-family: 'Mali', cursive;
+}
+.img1 {
+  background-image: url("#")!important;
+}
+.thecard{
+
+  transition: 0.6s;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s linear;
+}
+.thecard:hover {
+  transform:rotateY(180deg);
+}
+ .thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.theback{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.section-4 .site-btn1 {
+  margin-left: 0px;
+}
+/*---Connect --*/
+#connect {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F0E9E9;
+}
+#connect h2{
+  margin:auto;
+  font-size: 45px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#connect a {
+  font-size: 45px;
+  padding-right: 40px;
+}
+.fa-facebook {
+  color:#0771B8;
+}
+.fa-google-plus-g {
+  color:#D60B0B;
+}
+.fa-instagram {
+  color:#F24B5F;
+}
+.fa-youtube {
+  color:#8C0615;
+}
+.fa-facebook:hover,.fa-google-plus-g:hover,.fa-twitter:hover,.fa-instagram:hover,.fa-youtube:hover {
+  color: #D6E3C1;
+}
   }
 @media (max-width: 768px) {
-  
+ .navbar {
+  background-color:#fff!important;
+}
+.site-btn1 {
+  margin-left: 50px;
+  margin-top: 0;
+  font-size: 16px;
+}
+.nav-link{
+  color:#A6082F!important;
+}
+  /*---Section-1--*/
+
+.site-content {
+  height: 400px;
+}
+.site-title {
+  color: #fff;
+  font-family:'M PLUS Rounded 1c', sans-serif;
+  margin-top: 10%;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.site-desc {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 16px;
+  font-family: 'Mali', cursive;
+}
+.section-1 .site-btn1 {
+  margin-left: 50px;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+/*---Section-2 --*/
+.section-2 {
+  padding-top: 30px;
+}
+.carousel-inner img {
+  height: 300px!important;
+  }
+.text-white {
+  padding-top: 20px;
+  margin-left: 0px;
+  font-size: 40px;
+  color: black!important;
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+}
+.text {
+  margin-left: 0px;
+  font-size: 16px;
+  color:black;
+  font-family: 'Mali', cursive;
+}
+.section-2 .site-btn1 {
+  margin-left: 0px;
+}
+
+/*---Section-3 --*/
+.section-3 {
+  padding-top:10px;
+  height: 600px;
+  padding-bottom: 20px;
+}
+.meal {
+  height: 310px;
+  border-radius: 10px 10px;
+}
+.section-3 .left {
+  padding-bottom:20px;
+}
+.section-3 .site-btn1 {
+  margin-left: 0px;
+}
+
+/*---Section-4 --*/
+.section-4 .heading-1{
+  color:black;
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+  font-size: 40px;
+}
+.section-4 .para-1 {
+  color: black;
+  font-size: 16px;
+  font-family: 'Mali', cursive;
+}
+.card-title {
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+  font-size: 40px;
+}
+.card-text {
+  font-size: 16px;
+  font-family: 'Mali', cursive;
+}
+
+.thecard{
+
+  transition: 0.6s;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s linear;
+}
+.thecard:hover {
+  transform:rotateY(180deg);
+}
+ .thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.theback{
+  border-radius: 10px;
+  backface-visibility: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.section-4 .site-btn1 {
+  margin-left: 0px;
+}
+/*---Connect --*/
+#connect {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F0E9E9;
+}
+#connect h2{
+  margin:auto;
+  font-size: 40px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#connect a {
+  font-size: 40px;
+  padding-right: 30px;
+}
+.fa-facebook {
+  color:#0771B8;
+}
+.fa-google-plus-g {
+  color:#D60B0B;
+}
+.fa-instagram {
+  color:#F24B5F;
+}
+.fa-youtube {
+  color:#8C0615;
+}
+.fa-facebook:hover,.fa-google-plus-g:hover,.fa-twitter:hover,.fa-instagram:hover,.fa-youtube:hover {
+  color: #D6E3C1;
+}
 }
 @media (max-width: 576px) {
-  
+.navbar {
+  background-color:#fff!important;
+}
+.site-btn1 {
+  margin-left: 50px;
+  margin-top: 0;
+  font-size: 12px;
+}
+  /*---Section-1--*/
+.site-content {
+  background-image: url("");
+  height: 205px;
+}
+.site-title {
+  color: black;
+  font-family:'M PLUS Rounded 1c', sans-serif;
+  margin-top: 5%;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.site-desc {
+  color: black;
+  margin-left: 50px;
+  font-size: 12px;
+  font-family: 'Mali', cursive;
+}
+.section-1 .site-btn1 {
+  margin-left: 50px;
+  margin-top: 0px;
+  font-size: 12px;
 }
 
+/*---Section-2 --*/
+.section-2 {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+.section-2 .left {
+  display:none!important;
+}
+.text-white {
+  margin-left: 30px;
+  font-size: 25px;
+  color: black!important;
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+}
+.text {
+  margin-left: 30px;
+  font-size: 12px;
+  color:black;
+  font-family: 'Mali', cursive;
+}
+.section-2 .site-btn1 {
+  margin-left: 30px;
+}
 
-/*---Firefox Bug Fix --*/
+/*---Section-3 --*/
+.section-3 {
+  margin-top:0px;
+  height: 215px;
+}
+.section-3 .right {
+  display: none;
+}
+.section-3 .site-btn1 {
+  margin-left: 30px;
+}
 
+/*---Section-4 --*/
+.section-4 .heading-1{
+  color:black;
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+  font-size: 25px;
+}
+.section-4 .para-1 {
+  color: black;
+  font-size: 12px;
+  font-family: 'Mali', cursive;
+}
+.card-title {
+  font-family:'M PLUS Rounded 1c', sans-serif; 
+  font-size: 25px;
+}
+.card-text {
+  font-size: 12px;
+  font-family: 'Mali', cursive;
+}
 
+.thecard{
 
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
-
-
-
-
+  transition: 0.6s;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s linear;
+}
+.thecard:hover {
+  transform:rotateY(180deg);
+}
+ .thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.theback{
+  border-radius: 10px;
+  backface-visibility: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.section-4 .site-btn1 {
+  margin-left: 0px;
+}
+/*---Connect --*/
+#connect {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F0E9E9;
+}
+#connect h2{
+  margin:0;
+  font-size: 30px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#connect a {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.fa-facebook {
+  color:#0771B8;
+}
+.fa-google-plus-g {
+  color:#D60B0B;
+}
+.fa-instagram {
+  color:#F24B5F;
+}
+.fa-youtube {
+  color:#8C0615;
+}
+.fa-facebook:hover,.fa-google-plus-g:hover,.fa-twitter:hover,.fa-instagram:hover,.fa-youtube:hover {
+  color: #D6E3C1;
+}
+}
